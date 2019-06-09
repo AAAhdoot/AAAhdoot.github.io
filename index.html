@@ -68,6 +68,30 @@
             Resume
           </a>
         </div>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">
+              <div class="navbar-button" /></div>
+              <div class="navbar-button" /></div>
+              <div class="navbar-button" /></div>
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+              <a href="/" >
+                Home
+              </a>
+              <a href="#about-me">
+                About Me
+              </a>
+              <a href="#projects">
+                Projects
+              </a>
+              <a href="#experience">
+                Experience
+              </a>
+              <a href="Ariel.Ahdoot.pdf" target="_blank">
+                Resume
+              </a>
+          </div>
+        </div>
       </div>
     </header>
     <div class="body-div">
@@ -91,4 +115,28 @@
       </footer>
     </div>
   </body>
+  <script>
+    /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      let dropdown = document.getElementById('myDropdown');
+      console.log('before', dropdown.classList.value);
+      dropdown.classList.toggle('show');
+      console.log('after', dropdown.classList.value);
+    }
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName('dropdown-content');
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    };
+  </script>
 </html>
