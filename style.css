@@ -23,8 +23,11 @@ a:hover {
 }
 
 header {
-  background: rebeccapurple;
+  /* background: rebeccapurple; */
+  background: #005d6b;
   margin-bottom: 1.45rem;
+  position: fixed;
+  width: 100%;
 }
 
 .header-div {
@@ -44,12 +47,24 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 }
 
 #projects {
   display: flex;
   flex-direction: column;
   align-items: space-around;
+  padding-top: 100px; /*when you click on the link, add 100 px top buffer to projects, otherwise no padding*/
+}
+
+#about-me {
+  padding-top: 100px; /*when you click on the link, add 100 px top buffer to projects, otherwise no padding*/
+}
+
+#home {
+  margin-top: 125px;
+  padding-top: 100px; /*when you click on the link, add 100 px top buffer to projects, otherwise no padding*/
+  /* background-color: black; */
 }
 
 .section {
@@ -62,6 +77,10 @@ header {
 
 .caption div {
   margin-bottom: 15px;
+}
+
+#experience {
+  padding-top: 100px; /*when you click on the link, add 100 px top buffer to projects, otherwise no padding*/
 }
 
 .caption {
@@ -113,7 +132,8 @@ footer {
 
 .footer-div a {
   font-size: 2rem;
-  color: rebeccaPurple;
+  /* color: rebeccaPurple; */
+  color: #005d6b;
 }
 
 .dropbtn {
