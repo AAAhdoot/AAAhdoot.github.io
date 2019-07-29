@@ -26,8 +26,10 @@ header {
   /* background: rebeccapurple; */
   background: #005d6b;
   margin-bottom: 1.45rem;
-  position: fixed;
+  /* position: fixed;
   width: 100%;
+  top: 0; */
+  /* z-index: 10; */
 }
 
 .header-div {
@@ -50,20 +52,29 @@ header {
   align-items: center;
 }
 
+#projects::before {
+  display: block;
+  content: ' ';
+  margin-top: -100px;
+  height: 100px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 #projects {
   display: flex;
   flex-direction: column;
   align-items: space-around;
-  padding-top: 100px; /*when you click on the link, add 100 px top buffer to projects, otherwise no padding*/
+  /* padding-top: 100px; when you click on the link, add 100 px top buffer to projects, otherwise no padding */
 }
 
 #about-me {
-  padding-top: 100px; /*when you click on the link, add 100 px top buffer to projects, otherwise no padding*/
+  /* padding-top: 100px; when you click on the link, add 100 px top buffer to projects, otherwise no padding */
 }
 
 #home {
-  margin-top: 125px;
-  padding-top: 100px; /*when you click on the link, add 100 px top buffer to projects, otherwise no padding*/
+  /* margin-top: 125px; */
+  /* padding-top: /100px; when you click on the link, add 100 px top buffer to projects, otherwise no padding */
   /* background-color: black; */
 }
 
@@ -80,7 +91,7 @@ header {
 }
 
 #experience {
-  padding-top: 100px; /*when you click on the link, add 100 px top buffer to projects, otherwise no padding*/
+  /* padding-top: 100px; when you click on the link, add 100 px top buffer to projects, otherwise no padding */
 }
 
 .caption {
