@@ -49,7 +49,25 @@ header {
 #projects {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  align-items: space-around;
+}
+
+.section {
+  margin-bottom: 10px;
+}
+
+.project-section {
+  margin-bottom: 15px;
+}
+
+.caption div {
+  margin-bottom: 15px;
+}
+
+.caption {
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
 }
 
 .header-div h1 {
