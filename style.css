@@ -48,7 +48,7 @@ header {
   padding-top: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
@@ -72,10 +72,49 @@ header {
   /* padding-top: 100px; when you click on the link, add 100 px top buffer to projects, otherwise no padding */
 }
 
+#profile-pic {
+  flex: 2;
+}
+
+#description {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  align-items: center;
+  width: 350px;
+  overflow-wrap: break-word;
+}
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+#story {
+}
+
+#intro {
+  display: flex;
+  align-items: center;
+}
+
 #home {
   /* margin-top: 125px; */
   /* padding-top: /100px; when you click on the link, add 100 px top buffer to projects, otherwise no padding */
   /* background-color: black; */
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.up-arrow {
+  size: 5rem;
 }
 
 .section {
@@ -205,5 +244,14 @@ footer {
   }
   .dropdown {
     display: inline-block;
+  }
+  /* #intro {
+    flex-direction: column;
+  } */
+}
+
+@media (max-width: 600px) {
+  #intro {
+    flex-direction: column;
   }
 }
