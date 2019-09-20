@@ -24,7 +24,8 @@ a:hover {
 
 header {
   /* background: rebeccapurple; */
-  background: #005d6b;
+  /* background: #005d6b; */
+  background: #5285c6;
   margin-bottom: 1.45rem;
   /* position: fixed;
   width: 100%;
@@ -52,14 +53,14 @@ header {
   align-items: center;
 }
 
-#projects::before {
+/* #projects::before {
   display: block;
   content: ' ';
   margin-top: -100px;
   height: 100px;
   visibility: hidden;
   pointer-events: none;
-}
+} */
 
 #projects {
   display: flex;
@@ -183,7 +184,8 @@ footer {
 .footer-div a {
   font-size: 2rem;
   /* color: rebeccaPurple; */
-  color: #005d6b;
+  /* color: #005d6b; */
+  color: #5285c6;
 }
 
 .dropbtn {
@@ -253,5 +255,8 @@ footer {
 @media (max-width: 600px) {
   #intro {
     flex-direction: column;
+  }
+  #body-div {
+    /* max-width: 600px; */
   }
 }
