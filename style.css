@@ -66,6 +66,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: space-around;
+  justify-content: center;
   /* padding-top: 100px; when you click on the link, add 100 px top buffer to projects, otherwise no padding */
 }
 
@@ -114,21 +115,20 @@ header {
   justify-content: space-between;
 }
 
-.up-arrow {
-  size: 5rem;
-}
-
 .section {
   margin-bottom: 10px;
 }
 
 .project-section {
   margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
+/*
 .caption div {
   margin-bottom: 15px;
-}
+} */
 
 #experience {
   /* padding-top: 100px; when you click on the link, add 100 px top buffer to projects, otherwise no padding */
@@ -138,6 +138,10 @@ header {
   display: flex;
   flex-direction: column;
   align-items: space-around;
+  margin-right: 0;
+  /* align-items: center; */
+  /* width: 350px;
+  overflow-wrap: break-word; */
 }
 
 .header-div h1 {
@@ -258,5 +262,14 @@ footer {
   }
   #body-div {
     /* max-width: 600px; */
+  }
+  .caption {
+    width: 350px;
+    overflow-wrap: break-word;
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+  .screenshot {
+    width: 315px;
   }
 }
