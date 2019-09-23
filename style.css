@@ -66,15 +66,17 @@ header {
 
 .icons {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
   border-top: 1px solid black;
   width: 100%;
+  align-content: flex-start;
 }
 
 .tech-icon {
   width: 30px;
   height: 30px;
+  margin-left: 10px;
 }
 
 .screenshot {
