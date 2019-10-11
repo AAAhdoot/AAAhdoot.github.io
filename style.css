@@ -64,6 +64,17 @@ header {
   border: 1px solid black;
 }
 
+.caption {
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  margin-right: 0;
+  margin-left: 10px;
+  /* align-items: center; */
+  /* width: 350px;
+  overflow-wrap: break-word; */
+}
+
 .icons {
   display: flex;
   justify-content: space-around;
@@ -71,12 +82,23 @@ header {
   border-top: 1px solid black;
   width: 100%;
   align-content: flex-start;
+  background: #f1f0f0;
 }
 
 .tech-icon {
   width: 30px;
   height: 30px;
   margin-left: 10px;
+}
+
+.tech-name {
+  background-color: yellow;
+  padding: 20px;
+  display: none;
+}
+
+.tech-icon:hover + .tech-name {
+  display: block;
 }
 
 .screenshot {
@@ -166,16 +188,6 @@ header {
   /* padding-top: 100px; when you click on the link, add 100 px top buffer to projects, otherwise no padding */
 }
 
-.caption {
-  display: flex;
-  flex-direction: column;
-  align-items: space-around;
-  margin-right: 0;
-  /* align-items: center; */
-  /* width: 350px;
-  overflow-wrap: break-word; */
-}
-
 .header-div h1 {
   margin: 0;
 }
@@ -205,13 +217,17 @@ header {
   margin-right: 5px;
 }
 
-.link:active {
+.div-links a:hover {
+  color: blue;
+}
+
+/* .link:active {
   color: red;
 }
 
 .link:target {
   color: red;
-}
+} */
 
 footer {
   display: block;
