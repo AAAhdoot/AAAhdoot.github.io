@@ -376,6 +376,10 @@ ul.content {
   .image-and-icons {
     width: 450px;
   }
+
+  #description {
+    width: 315px;
+  }
 }
 
 @media (max-width: 600px) {
