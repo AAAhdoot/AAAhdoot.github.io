@@ -382,7 +382,7 @@ ul.content {
   .caption {
     width: 350px;
     overflow-wrap: break-word;
-    margin: 0px;
+    /* margin: 0px; */
     /* align-items: center; */
     /* justify-content: center; */
   }
